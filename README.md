@@ -27,6 +27,7 @@ Biblioteca mínima em C sobre o **SDL2** que oferece estruturas prontas para uso
 7. [Testes interativos (`GTest`)](#testes-interativos-gtest)
 8. [Limitações conhecidas](#limitações-conhecidas)
 9. [Dependências embutidas](#dependências-embutidas)
+10. [Como Contribuir](#como-contribuir)
 
 ---
 
@@ -404,7 +405,7 @@ void Text_Test1(char *fonte, unsigned pt, char *texto);   // idem Test2, Test3, 
 
 Cada uma abre uma janela própria e só termina ao fechá-la. `Text_Test4` é a mais completa (campo de texto, botões, bordas e rotações). Há um `GText_Test4_Asset1.jpeg` em `GTest/` usado por ela.
 
-Este repositório já fornece um arquivo main.c para testes. Basta somente acessá-lo, descomentar um dos testes desejados e realizar o build por meio do comando:
+Este repositório já fornece um arquivo source/main.c para testes. Basta somente acessá-lo, descomentar um dos testes desejados e realizar o build por meio dos comandos:
 ```bash
 cmake --preset devquote
 cmake --build __build_devquote__
@@ -425,3 +426,12 @@ cmake --build __build_devquote__
 - [`utf8.h`](https://github.com/sheredom/utf8.h) — domínio público (Unlicense).
 - [`uthash`](https://troydhanson.github.io/uthash/) — BSD revisado.
 
+## Como contribuir
+
+Caso deseje fazer parte do desenvolvimento dessa biblioteca, basta realizar um fork dela e executar os comandos abaixo para garantir a virtualização do ambiente:
+```bash
+./run.sh
+```
+
+O docker é usado para a criação de containers e imagens da biblioteca, portanto, garanta ter a versão 29.7.2 do Docker Desktop.
+Por hora, não é suportado o MacOS.
