@@ -6,9 +6,19 @@
             "name": "devquote",
             "binaryDir": "${sourceDir}/__build_devquote__",
             "cacheVariables": {
-                "GRAPHICAL_BUILD_TESTS": "ON",
-                "compilation_mode": "DEVQUOTE"
+                "compilation_mode": "DEVQUOTE",
+                "GRAPHICAL_BUILD_TESTS": "ON"
+            }
+        },
+
+        {
+            "name": "windows_devquote",
+            "binaryDir": "${sourceDir}/__build_windows_devquote__",
+            "cacheVariables": {
+                "compilation_mode": "TOOLCHAIN_WINDOWS_DEVQUOTE",
+                "GRAPHICAL_BUILD_TESTS": "ON"
             }
         }
+
     ]
 }
