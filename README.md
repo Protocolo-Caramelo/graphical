@@ -434,4 +434,18 @@ Caso deseje fazer parte do desenvolvimento dessa biblioteca, basta realizar um f
 ```
 
 O docker é usado para a criação de containers e imagens da biblioteca, portanto, garanta ter a versão 29.7.2 do Docker Desktop.
-Por hora, não é suportado o MacOS.
+Por hora, não é suportado compilação para o MacOS.
+
+Para compilar para Linux:
+```bash
+cmake --preset devquote
+cmake --build __build_devquote__
+./__text_devquote__
+```
+
+Já para Windows:
+```bash
+cmake --preset windows_devquote
+cmake --build __build_windows_devquote__
+./__text_windows_devquote__.exe
+```
