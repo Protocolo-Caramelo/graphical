@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "configurePresets":
+    [
+        {
+            "name": "devquote",
+            "binaryDir": "${sourceDir}/__build_devquote__",
+            "cacheVariables": {
+                "GRAPHICAL_BUILD_TESTS": "ON",
+                "compilation_mode": "DEVQUOTE"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+services:
+  graphical_sdl:
+    image: "graphical_sdl:latest"
+    build: .
+
+    volumes:
+      - ./graphical:/graphical
+    environment:
+      - DISPLAY=${DISPLAY}
+      - WAYLAND_DISPLAY=${WAYLAND_DISPLAY}
+      - SDL_VIDEODRIVER=wayland
+
+    stdin_open: true
+    tty: true
